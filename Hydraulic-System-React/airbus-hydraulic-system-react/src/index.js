@@ -11,12 +11,14 @@ import WeightDisplay from './weightDisplay';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <div className='application-container'>
       <HydraulicsDisplay />
-    <div className='lower-ecam-stats'>
+      <div className='lower-ecam-stats'>
       <TemperatureDisplay />
       <TimerDisplay />
       <WeightDisplay />
-    </div>
+      </div>
+    </div>  
   </React.StrictMode>
 );
 

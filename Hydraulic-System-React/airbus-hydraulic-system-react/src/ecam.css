@@ -13,6 +13,14 @@ Blue: 15e6e9 */
     font-size: 1.5rem;
 }
 
+.application-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100%;
+}
+
 .hydraulics-display {
   display: flex;
   flex-direction: column;
@@ -24,10 +32,10 @@ Blue: 15e6e9 */
 .lower-ecam-stats {
     display: flex;
     justify-content: center;
-    margin-bottom: 20%;
-    margin: -2% auto;
-    max-width: 90%;
-    height: 100%;
+    align-items: stretch;
+    min-width: 90%;
+    margin: 0 auto;
+    padding-bottom: 30px;
     border-top: 7px solid white;
 }
 
@@ -35,14 +43,17 @@ Blue: 15e6e9 */
   text-align: center;
   font-size: 1rem;
   width: 100%;
-  height: 100%;
 }
 
 .timer-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
   border-left: 7px solid white;
   border-right: 7px solid white;
 }
+
 .temperature-stat {
   display: flex;
 }
@@ -66,7 +77,9 @@ Blue: 15e6e9 */
 .hydraulic-channels {
   display: flex;
   justify-content: space-around;
+  align-items: flex-start;
   margin-top: 3.6rem;
+  width: 100%;
 }
 
 .channel-name {
@@ -103,4 +116,22 @@ Blue: 15e6e9 */
   color: #0ef111;
   z-index: 100;
 background-color: #0c0c0c;
+}
+
+.buttons {
+  /* display: none; */
+margin-top: 5rem;
+min-width: 100%;
+}
+
+.buttons * {
+  width: 100%;
+}
+
+.psi-label {
+    color: #15e6e9;
+    font-size: 1.2rem;
+    align-self: flex-start;
+    margin-top: 3.7rem;
+    font-weight: bold;
 }
