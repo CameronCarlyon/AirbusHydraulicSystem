@@ -3,11 +3,17 @@ Red: eb0603
 Green: 0ef111
 Blue: 15e6e9 */
 
+:root {
+  --color-green: #0ef111;
+  --color-blue: #15e6e9;
+  --color-background: #0c0c0c;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #0c0c0c;
+    background-color: var(--color-background);
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-size: 1.5rem;
@@ -21,12 +27,16 @@ Blue: 15e6e9 */
   width: 100%;
 }
 
-.hydraulics-display {
+.hydraulics-display,
+.hydraulic-channels {
   display: flex;
+  width: 100%;
+}
+
+.hydraulics-display {
   flex-direction: column;
   text-align: center;
   height: 90vh;
-  width: 100%;
 }
 
 .lower-ecam-stats {
@@ -47,7 +57,6 @@ Blue: 15e6e9 */
 
 .timer-display {
   display: flex;
-  align-items: center;
   justify-content: center;
   height: 100%;
   border-left: 7px solid white;
@@ -62,7 +71,7 @@ Blue: 15e6e9 */
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #0ef111;
+    color: var(--color-green);
     font-family: 'B612', Arial, sans-serif;
 }
 
@@ -75,11 +84,9 @@ Blue: 15e6e9 */
 }
 
 .hydraulic-channels {
-  display: flex;
   justify-content: space-around;
   align-items: flex-start;
   margin-top: 3.6rem;
-  width: 100%;
 }
 
 .channel-name {
@@ -103,8 +110,8 @@ Blue: 15e6e9 */
   font-size: 1.4rem;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #0c0c0c;
-  color: #0ef111;
+  background-color: var(--color-background);
+  color: var(--color-green);
   margin: 0;
   padding: 0;
   z-index: 1;
@@ -113,13 +120,13 @@ Blue: 15e6e9 */
 .psi-value {
   position: absolute;
   top: 7rem;
-  color: #0ef111;
+  color: var(--color-green);
   z-index: 100;
-background-color: #0c0c0c;
+background-color: var(--color-background);
 }
 
 .buttons {
-  /* display: none; */
+  display: none;
 margin-top: 5rem;
 min-width: 100%;
 }
@@ -129,7 +136,7 @@ min-width: 100%;
 }
 
 .psi-label {
-    color: #15e6e9;
+    color: var(--color-blue);
     font-size: 1.2rem;
     align-self: flex-start;
     margin-top: 3.7rem;

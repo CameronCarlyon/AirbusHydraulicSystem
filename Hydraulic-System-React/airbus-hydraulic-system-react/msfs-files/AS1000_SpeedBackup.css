@@ -1,0 +1,88 @@
+* {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#Electricity {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #0D0D0D;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.hydraulics-display {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hydraulics-title {
+  text-decoration: underline;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.hydraulic-channels {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.hydraulic-channel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.channel-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #0ef111;
+}
+
+.psi-label {
+  color: #15e6e9;
+  font-size: 1.2rem;
+  align-self: flex-start;
+  margin-top: 3.7rem;
+  font-weight: bold;
+}
+
+.lower-ecam-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  padding: 1rem;
+  border-top: 2px solid white;
+}
+
+.temperature-display,
+.timer-display,
+.weight-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer-display {
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  padding: 0 1rem;
+}
+
+.temperature-stat {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
