@@ -7,10 +7,11 @@ import HydraulicsDisplay from './hydraulicsDisplay';
 import TemperatureDisplay from './temperatureDisplay';
 import TimerDisplay from './timerDisplay';
 import WeightDisplay from './weightDisplay';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HydraulicsDisplay />
+      <HydraulicsDisplay />
     <div className='lower-ecam-stats'>
       <TemperatureDisplay />
       <TimerDisplay />
