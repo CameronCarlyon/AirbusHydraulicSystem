@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetPackage Version="0.1.0">
+	<ItemSettings>
+		<ContentType>INSTRUMENTS</ContentType>
+		<Title>AirbusHydraulics</Title>
+		<Manufacturer/>
+		<Creator>Cameron Carlyon</Creator>
+	</ItemSettings>
+	<Flags>
+		<VisibleInStore>false</VisibleInStore>
+		<CanBeReferenced>false</CanBeReferenced>
+	</Flags>
+	<AssetGroups>
+		<AssetGroup Name="AirbusHydraulicsDisplay">
+			<Type>Copy</Type>
+			<Flags>
+				<FSXCompatibility>false</FSXCompatibility>
+			</Flags>
+			<AssetDir>PackageSources\Copys\airbushydraulics\AirbusHydraulicsDisplay\</AssetDir>
+			<OutputDir>P:\Microsoft Flight Simulator\Official\Steam\asobo-vcockpits-instruments-navsystems\html_ui\Pages\VCockpit\Instruments\NavSystems\AS1000_BackupDisplay\Speed\</OutputDir>
+		</AssetGroup>
+		<AssetGroup Name="ContentInfo">
+			<Type>ContentInfo</Type>
+			<Flags>
+				<FSXCompatibility>false</FSXCompatibility>
+			</Flags>
+			<AssetDir>PackageDefinitions\cameroncarlyon-airbushydraulics\ContentInfo\</AssetDir>
+			<OutputDir>ContentInfo\cameroncarlyon-airbushydraulics\</OutputDir>
+		</AssetGroup>
+	</AssetGroups>
+</AssetPackage>
+

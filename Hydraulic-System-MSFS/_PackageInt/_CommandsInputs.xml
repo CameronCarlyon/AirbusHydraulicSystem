@@ -1,0 +1,33 @@
+<CommandsInputs>
+	<File Path="P:\Microsoft Flight Simulator SDK\Projects\AirbusHydraulics\PackageSources\Copys\airbushydraulics\AirbusHydraulicsDisplay\PANEL.CFG" Failure="0">
+		<Package Name="cameroncarlyon-airbushydraulics" Failure="0">
+			<AssetGroup Name="AirbusHydraulicsDisplay"/>
+		</Package>
+	</File>
+	<File Path="P:\Microsoft Flight Simulator SDK\Projects\AirbusHydraulics\PackageSources\Copys\airbushydraulics\AirbusHydraulicsDisplay\AS1000_SpeedBackup.css" Failure="0">
+		<Package Name="cameroncarlyon-airbushydraulics" Failure="0">
+			<AssetGroup Name="AirbusHydraulicsDisplay"/>
+		</Package>
+	</File>
+	<File Path="P:\Microsoft Flight Simulator SDK\Projects\AirbusHydraulics\PackageSources\Copys\airbushydraulics\AirbusHydraulicsDisplay\ini-efb-a320neo.js" Failure="0">
+		<Package Name="cameroncarlyon-airbushydraulics" Failure="0">
+			<AssetGroup Name="AirbusHydraulicsDisplay"/>
+		</Package>
+	</File>
+	<File Path="P:\Microsoft Flight Simulator SDK\Projects\AirbusHydraulics\PackageDefinitions\cameroncarlyon-airbushydraulics\ContentInfo\Thumbnail.jpg" Failure="0">
+		<Package Name="cameroncarlyon-airbushydraulics" Failure="0">
+			<AssetGroup Name="ContentInfo"/>
+		</Package>
+	</File>
+	<File Path="P:\Microsoft Flight Simulator SDK\Projects\AirbusHydraulics\PackageSources\Copys\airbushydraulics\AirbusHydraulicsDisplay\AS1000_SpeedBackup.js" Failure="0">
+		<Package Name="cameroncarlyon-airbushydraulics" Failure="0">
+			<AssetGroup Name="AirbusHydraulicsDisplay"/>
+		</Package>
+	</File>
+	<File Path="P:\Microsoft Flight Simulator SDK\Projects\AirbusHydraulics\PackageSources\Copys\airbushydraulics\AirbusHydraulicsDisplay\AS1000_SpeedBackup.html" Failure="0">
+		<Package Name="cameroncarlyon-airbushydraulics" Failure="0">
+			<AssetGroup Name="AirbusHydraulicsDisplay"/>
+		</Package>
+	</File>
+</CommandsInputs>
+

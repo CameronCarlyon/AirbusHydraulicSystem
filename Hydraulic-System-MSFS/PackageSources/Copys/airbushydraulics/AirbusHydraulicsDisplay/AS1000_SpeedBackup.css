@@ -1,0 +1,135 @@
+* {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Main ECAM display */
+#Electricity {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #0D0D0D;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Hydraulics page */
+.hydraulics-page {
+  width: 100%;
+  height: 85%; /* Adjust this value to leave space for the bottom displays */
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0,255,0,0.1); /* For debugging */
+}
+
+.hydraulic-title {
+  color: #00FFFF;
+  text-align: center;
+}
+
+.hydraulic-systems {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.hydraulic-system h3 {
+  margin-bottom: 10px;
+}
+
+/* Lower ECAM display */
+.lower-ecam-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  height: 15%; /* Adjust this value based on your layout needs */
+}
+
+.temperature-display,
+.clock-display,
+.gross-weight-display {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  border-top: 2px solid white;
+}
+
+.clock-display {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  text-align: center;
+}
+
+.temperature-content,
+.clock-content,
+.gross-weight-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.gross-weight-display {
+
+  text-align: right;
+}
+
+/* Hydraulic Systems SVG */
+.hydraulic-systems-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hydraulic-systems-svg {
+  height: 100%;
+  width: 100px; /* Set a fixed width */
+  z-index: 10; /* Ensure it's above other elements */
+}
+
+.hydraulic-system text {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.hydraulic-system .fluid-level {
+  opacity: 0.5;
+}
+
+.hydraulic-system .pressure,
+.hydraulic-system .quantity {
+  font-size: 12px;
+}
+
+/* Hydraulics page title */
+.hydraulic-page-title {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Hydraulic system titles */
+.hydraulic-systems-titles {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.system-title {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
