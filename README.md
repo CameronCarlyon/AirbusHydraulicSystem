@@ -116,4 +116,4 @@ The drastically different aspect ratio demonstrates the importance of responsive
 - System Labels (1 & 2).
 
 # Conclusion
-This project provides a fundemental simulation of the Airbus A320 hydraulic system, both as a standalone web application and as an integration for Microsoft Flight Simulator 2020. It offers a representitive visual representation and interactive elements.
+This project provides a fundamental simulation of the Airbus A320 hydraulic system, both as a standalone web application and as an integration for Microsoft Flight Simulator 2020. It offers a representitive visual representation and interactive elements.
