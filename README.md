@@ -16,18 +16,23 @@ The React application provides a simulation of the Airbus A320 hydraulic lower E
 - Lower ECAM statistics display demonstrating temperature, time and gross weight information.
 
 # Key Components
-HydraulicsDisplay
+**HydraulicsDisplay:** 
+
 This component serves as the main container for the hydraulic system display, rendering the title and individual hydraulic channels.
 
-HydraulicChannel
+**HydraulicChannel:** 
+
 This component represents an individual hydraulic channel, including:
+
 - SVG graphics for system components.
 - Hydraulic channel pressure display.
 - Interactive buttons for system control.
 - State management for pump status, fire valve status and reservoir pressure.
 
-TemperatureDisplay, TimerDisplay and WeightDisplay
+**TemperatureDisplay**, **TimerDisplay** and **WeightDisplay**: 
+
 These components render the lower ECAM display information:
+
 - Temperature Display: Shows Total Air Temperature (TAT) and Static Air Temperature (SAT).
 - Timer Display: Displays current Universal Standard Time.
 - Weight Display: Shows the Gross Weight of the aircraft.
@@ -52,13 +57,12 @@ The component renders a complex SVG structure that visually represents the hydra
 - Hydraulic channel system label.
 - A PSI value display.
 - An SVG graphic representing the hydraulic system, including:
- - Green arrow.
- - System lines.
+ - Hydraulic system lines.
  - Main system pump status indicator.
  - Fire valve status indicator (for non-blue channels).
  - Hydraulic reservoir representation.
  
-The SVG elements change color based on the status of various components (pump, fire valve) and the current pressure.
+The SVG elements change colour based on the status of various components (pump, fire valve) and the current pressure.
 
 **User Interaction:**
 The component can include buttons that allows users to:
@@ -73,7 +77,7 @@ These interactions directly modify the component's state, which in turn updates 
 The component uses conditional rendering to display different SVG elements based on the channel name (BLUE vs. others) and the current status of various components.
 
 **Performance Considerations:**
-The use of SVG for graphics allows for smooth scaling and efficient rendering. The component also uses inline styles for dynamic color changes, which can be more performant than class-based styling for frequently changing values.
+The use of SVG for graphics allows for smooth scaling and efficient rendering. The component also uses inline styles for dynamic colour changes, which can be more performant than class-based styling for frequently changing values.
 
 # Styling
 The application uses a custom CSS file (ecam.css) to style the components, ensuring a realistic representation of the ECAM display.
@@ -116,4 +120,14 @@ The drastically different aspect ratio demonstrates the importance of responsive
 - System Labels (1 & 2).
 
 # Conclusion
-This project provides a fundamental simulation of the Airbus A320 hydraulic system, both as a standalone web application and as an integration for Microsoft Flight Simulator 2020. It offers a representitive visual representation and interactive elements.
+This project provides a fundamental simulation of the Airbus A320 hydraulic system, implemented as both a standalone React web application and an integration for Microsoft Flight Simulator. The simulation offers an interactive representation of the aircraft's hydraulic systems, closely mirroring the real-world Electronic Centralized Aircraft Monitor (ECAM) display found in Airbus flightdecks.
+
+**Key features of this simulation include:**
+
+- Accurate visual representation of the three hydraulic channels (Green, Blue, and Yellow).
+- Real-time pressure calculations and display.
+- Interactive components such as pumps and fire valves.
+- Dynamic SVG graphics that respond to system state changes.
+- Lower ECAM display showing supplementary flight information (temperature, time, and weight).
+
+Both implementations of this project as a React web application and within the MSFS SDK leverage SVG for crisp, scalable graphics and employ modular, maintainable code structures.
