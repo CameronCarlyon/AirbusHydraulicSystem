@@ -1,4 +1,4 @@
-# AirbusHydraulicSystem
+# Airbus A320 Hydraulic System Recreation
 This project features a graphic representation of the Airbus A320 hydraulic system written in React and the Microsoft Flight Simulator SDK.
 
 Both sections of this project aim to provide a realistic representation of the Airbus A320 hydraulic system, offering visual feedback and interactive elements for users to engage with the system.
