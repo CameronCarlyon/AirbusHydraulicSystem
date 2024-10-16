@@ -26,7 +26,7 @@ function HydraulicChannel({ name }) {
                 {/* Top Arrow */}
                 <polygon points="35,10 65,10 50,-10" fill="none" stroke={fireValveStatus === 0 && name !== "BLUE" ? "#ffa500" : (pumpStatus === 0 ? "#ffa500" : "#0ef111")} strokeWidth="4" />
                 
-                {/* Green vertical line (upper part) */}
+                {/* Hydraulic Line Graphic (upper section) */}
                 <line x1="50" y1="10" x2="50" y2="260" stroke={fireValveStatus === 0 && name !== "BLUE" ? "#ffa500" : (pumpStatus === 0 ? "#ffa500" : "#0ef111")} strokeWidth="3" />
                 
                 {/* Main System Pump Status */}
@@ -44,10 +44,10 @@ function HydraulicChannel({ name }) {
 
                 {name !== "BLUE" && (
                     <>
-                        {/* Green vertical line above Fire Valve graphic*/}
+                        {/* Hydraulic line above Fire Valve graphic*/}
                         <line x1="50" y1="320" x2="50" y2="335" stroke={fireValveStatus === 0 ? "#ffa500" : "#0ef111"} strokeWidth="3" />
 
-                        {/* Fire Valve Status circle */}
+                        {/* Fire Valve Status */}
                         {fireValveStatus === 1 ? (
                             <>
                                 <circle cx="50" cy="360" r="25" fill="#0c0c0c" stroke="#0ef111" strokeWidth="3" />
@@ -60,7 +60,7 @@ function HydraulicChannel({ name }) {
                             </>
                         )}
 
-                        {/* Green vertical line below Fire Valve graphic*/}
+                        {/* Hydraulic line below Fire Valve graphic*/}
                         <line x1="50" y1="385" x2="50" y2="415" stroke="#0ef111" strokeWidth="3" />
                     </>
                 )}
@@ -77,7 +77,7 @@ function HydraulicChannel({ name }) {
                 {/* White Line - Hydraulic Reservoir */}
                 <line x1="50" y1="550" x2="50" y2="415" stroke="white" strokeWidth="3" />
 
-                {/* Hydraulic Reservoir Minimum Quantity */}
+                {/* Hydraulic Reservoir Minimum Quantity Range */}
                 <rect x="50" y={550 - (name === "BLUE" ? 40 : 20)} width="7" height={name === "BLUE" ? 40 : 20} fill="none" stroke="#ffa500" strokeWidth="3" />
                 
                 {/* Hydraulic Reservoir Indicator */}

@@ -126,7 +126,7 @@ background-color: var(--color-background);
 }
 
 .buttons {
-  display: none;
+  /* display: none; */
 margin-top: 5rem;
 min-width: 100%;
 }
